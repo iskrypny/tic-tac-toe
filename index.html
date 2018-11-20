@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="style/main.css">
+	
+</head>
+<body>
+	<div id="gamefield">
+		<h1><img src="img/board.png" alt="logo">Tic-Tac-Toe</h1>
+		<form name="UsersInput" action="">
+			Size of gamefield:
+			<input type="number" id="size" placeholder="3-10">
+			<br>
+			First player's name:
+			<input type="text" id="firstPlayerName">
+			<br>
+			Second player's name:
+			<input type="text" id="secondPlayerName">
+			<br>
+			<input type="button" value="Start" onclick="controller.start()">
+			<textarea id="userTextArea" disabled></textarea>
+		</form>
+		<table>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
