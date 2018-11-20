@@ -15,15 +15,6 @@ var view = {
 		document.querySelector("tbody").innerHTML = '';
 	},
 
-	/*displayLog: function() {
-		var btnLog = document.createElement("button");
-		btnLog.setAttribute("id","btnLog");
-		btnLog.setAttribute("onclick","view.showLog()");
-		btnLog.innerHTML = "Show Log";
-		var gameField = document.getElementById("gamefield");
-		gamefield.appendChild(btnLog);
-	},*/
-
 	showLog: function() {
 		btnLog.innerHTML = "Hide Log";
 	},
@@ -79,8 +70,6 @@ var view = {
 			};
 			model.players.hits++;
 			controller.checkWinner(x, y, elem.innerHTML);
-			/* debug 
-			console.log(model.players.hits);*/	
 		}
 	}	
 }
@@ -152,7 +141,6 @@ var controller = {
 				model.randomizeFun();
 				view.displaySides();
 				view.generateField(model.size);
-				/*view.displayLog();*/
 			}, 2000);
 		} else {
 			view.displayMessage("Check your input parameters, please.");
