@@ -4,7 +4,7 @@ var view = {
 	},
 
 	addUsersTextArea: function(){
-		document.querySelector("#userTextArea").style.display = "block";
+		$("#userTextArea").fadeIn(2000);
 	},
 
 	clearUserTextArea: function(){
